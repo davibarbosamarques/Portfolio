@@ -5,12 +5,15 @@
     font-weight: 300;
     font-style: normal;
 }
-
 header {
     height: 10vh;
     display: flex;
     align-items: center;
     padding-left: 5rem;
+}
+main{
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 h1{
     font-weight: 300;
@@ -19,44 +22,92 @@ h1{
 }
 .home {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 90vh;
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 .home .intro{
     display: flex;
+
     flex-direction: column;
-    gap: 1rem;
 }
-.home h2 {
+.home .intro h2 {
     font-size: 5vh;
+    background-color: #0db0f6;
+    margin-top: 2px;
 }
 
-.home p {
-    font-size: 8vh;
+.home .intro p {
+    font-size: 7vh;
+    text-align: center;
 }
 
 .redes{
     margin-top:2vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .redes a {
     padding: 12px 20px 12px 20px;
     text-decoration: none;
     color: white;
     border-radius: 30px;
+    margin: 7px;
 }
 .redes #github{
     background-color: black;
 }
 .redes #linkedin{
     background-color: #0e76a2;
-    margin-left: 2rem;
-    margin-right: 2rem;
 }
 .redes #insta{
     background-color: #E4405F;
 }
 #img-apresentacao {
-    width: 60vh;
-    border-radius: 50%;
+    max-width: 60vh;
+    border-radius: 50% 90% 25% 80%;
+}
+
+@media(max-width:900px){
+    .home{
+        flex-direction: column-reverse;
+    }
+    .intro{
+        justify-content: center;
+        align-items: center;
+    }
+    #img-apresentacao{
+        max-width: 45vh;
+    }
+    .home p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* SEÇÃO SOBRE MIM */
+.sobre h2{
+    font-size: 5vh;
+}
+.sobre p{
+    margin: 8px;
+}
+.txt-destaque{
+    color: #0db0f6;
+    font-weight: 400;
+}
+
+@media(max-width:900px){
+    .sobre{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+/* SEÇÃO HABILIDADES */
+
+.skills{
+    padding-top: 5rem;
 }
