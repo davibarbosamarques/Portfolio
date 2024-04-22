@@ -96,32 +96,6 @@ h1{
     max-width: 70vh;
     border-radius: 50% 90% 25% 80%;
 }
-
-@media(max-width:900px){
-    .home{
-        flex-direction: column-reverse;
-    }
-    .intro{
-        justify-content: center;
-        align-items: center;
-    }
-    #img-apresentacao{
-        max-width: 45vh;
-    }
-    .home p{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
-@media(max-width:700px){
-    .redes{
-        margin-top:2vh;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-}
 /* SEÇÃO SOBRE MIM */
 .sobre h2{
     font-size: 5vh;
@@ -133,14 +107,6 @@ h1{
     color: #0db0f6;
     font-weight: 400;
 }
-
-@media(max-width:900px){
-    .sobre{
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-}
-
 /* SEÇÃO HABILIDADES */
 
 .skills{
@@ -184,3 +150,33 @@ h1{
 }
 
 /* SEÇÃO PROJETOS */
+
+@media(max-width:900px){
+    .home{
+        flex-direction: column-reverse;
+    }
+    .intro{
+        justify-content: center;
+        align-items: center;
+    }
+    #img-apresentacao{
+        max-width: 45vh;
+    }
+    .home p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .sobre{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+@media(max-width:700px){
+    .redes{
+        margin-top:2vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
