@@ -95,6 +95,13 @@ h1{
 #img-apresentacao {
     max-width: 70vh;
     border-radius: 50% 90% 25% 80%;
+    animation:  example 3s infinite ease-in-out;
+}
+
+@keyframes example{
+    50%{
+        border-radius: 70% 100% 40% 100%;
+    }
 }
 /* SEÇÃO SOBRE MIM */
 .sobre h2{
