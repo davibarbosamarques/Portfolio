@@ -33,6 +33,11 @@ h1{
 
     flex-direction: column;
 }
+@media(min-width: 900px){
+    .home .intro{
+        width: 50%;
+    }
+}
 .home .intro h2 {
     font-size: 4vh;
     margin-top: 2px;
@@ -41,9 +46,9 @@ h1{
     background-color: #0db0f6;
     color: white;
 }
-.home .intro p {
+.home .intro h3 {
     font-size: 6vh;
-    text-align: center;
+    /* text-align: center; */
 }
 .redes{
     margin-top:2vh;
@@ -94,15 +99,17 @@ h1{
 }
 #img-apresentacao {
     max-width: 70vh;
-    border-radius: 50% 90% 25% 80%;
+    border-radius: 50%;
     animation:  example 3s infinite ease-in-out;
 }
 
 @keyframes example{
     50%{
-        border-radius: 70% 100% 40% 100%;
+        border-radius: 40% 70% 40% 60%;
     }
 }
+
+
 /* SEÇÃO SOBRE MIM */
 .sobre h2{
     font-size: 5vh;
@@ -127,23 +134,31 @@ h1{
 
 .cards{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 3rem;
 }
 
 .skill-card{
-    width: 20rem;
-    padding: 2rem;
-    border: 2px solid #0db0f6;
+    width: 8rem;
+    height: 8rem;
+    background-color: black;
+    border-bottom: 10px solid #0db0f6;
+    color: white;
     border-radius: 20px;
-    margin-bottom: 2rem;
+    margin: 2rem;
+
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .icon{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 .icon p{
     font-size: 20px;
