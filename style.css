@@ -38,7 +38,7 @@ h1{
         width: 50%;
     }
 }
-.home .intro h2 {
+h2 {
     font-size: 4vh;
     margin-top: 2px;
 }
@@ -111,9 +111,6 @@ h1{
 
 
 /* SEÇÃO SOBRE MIM */
-.sobre h2{
-    font-size: 5vh;
-}
 .sobre p{
     margin: 8px;
 }
@@ -146,7 +143,7 @@ h1{
     border-bottom: 10px solid #0db0f6;
     color: white;
     border-radius: 20px;
-    margin: 2rem;
+    margin: 0.5rem;
 
 
     display: flex;
@@ -172,6 +169,10 @@ h1{
 }
 
 /* SEÇÃO PROJETOS */
+
+
+
+
 
 @media(max-width:900px){
     .home{
