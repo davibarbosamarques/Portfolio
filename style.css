@@ -171,16 +171,23 @@ h2 {
 /* SEÇÃO PROJETOS */
 
 .img-projetos{
-    width:85vh;
+    /* width:50vh; */
     border-radius: 2rem;
+    border: 1px solid black;
+}
+.img-projetos img{
+    width: auto;
 }
 .project{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
 
     margin-top: 3rem;
+    border: 1px solid red;
 }
 .txt-projeto{
-    gap: 2rem;
+    /* gap: 2rem; */
     margin-top: 2rem;
 }
 .button-project{
@@ -189,6 +196,7 @@ h2 {
 .button-project{
     margin-top:2vh;
     display: flex;
+    flex-wrap: wrap;
 }
 .button-project a{
     padding: 12px 20px 12px 20px;
