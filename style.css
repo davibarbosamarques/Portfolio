@@ -173,10 +173,12 @@ h2 {
 .img-projetos{
     /* width:50vh; */
     border-radius: 2rem;
-    border: 1px solid black;
+    display: flex;
+    justify-content: end;
 }
 .img-projetos img{
-    width: auto;
+    max-width: 70vh;
+    min-width: auto;
 }
 .project{
     display: grid;
@@ -184,11 +186,16 @@ h2 {
     column-gap: 4rem;
 
     margin-top: 3rem;
-    border: 1px solid red;
+}
+.container-txt-projeto-direita{
+    display: flex;
+    justify-content: end;
 }
 .txt-projeto{
-    /* gap: 2rem; */
     margin-top: 2rem;
+
+    max-width: 70vh;
+    min-width: auto;
 }
 .button-project{
     margin-top: 2rem;
@@ -231,6 +238,10 @@ h2 {
     gap: 0;
     align-items: end;
     text-align: end;
+}
+#img-projetos-direita{
+    display: flex;
+    justify-content: start;
 }
 @media(max-width:900px){
     .home{
