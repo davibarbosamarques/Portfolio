@@ -170,10 +170,60 @@ h2 {
 
 /* SEÇÃO PROJETOS */
 
+.img-projetos{
+    width:85vh;
+    border-radius: 2rem;
+}
+.project{
+    display: flex;
 
+    margin-top: 3rem;
+}
+.txt-projeto{
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.button-project{
+    margin-top: 2rem;
+}
+.button-project{
+    margin-top:2vh;
+    display: flex;
+}
+.button-project a{
+    padding: 12px 20px 12px 20px;
+    text-decoration: none;
+    color: rgb(118, 116, 116);
+    border-radius: 30px;
+    margin: 7px;
+}
+.button-project a:hover{
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+#repositório{
+    border: 1px solid rgb(118, 116, 116);
+    transition: 0.5s;
+}
+#repositório:hover{
+    border: 1px solid #0db0f6;
+    background-color: #0db0f6;
+    color: white;
+    transition: 0.5s;
+}
+#visualizar{
+    background-color: #0db0f6;
+    color: white;
+    transition: 0.5s;
+}
 
-
-
+#alinhamento-direita{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: end;
+    text-align: end;
+}
 @media(max-width:900px){
     .home{
         flex-direction: column-reverse;
