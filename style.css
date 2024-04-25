@@ -290,11 +290,11 @@ h2 {
     }
     .img-projetos img{
         max-width: 50vh;
-        /* min-width: auto; */
+        min-width: 30vh;
     }
-    .apresentacao-projetos{
-        margin-left: 2vh;
-        margin-right: 2vh;
+    .project{
+        display: flex;
+        flex-direction: column;
     }
 }
 @media(max-width:700px){
