@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Davi Barbosa - Programador Front-End</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,18 +18,35 @@
 
 <body>
     <header>
-        <h1>Portfólio</h1>
+        <div class="nav-bar">
+            <h1>Portfólio</h1>
 
-        <ul>
-            <li><a href="">Apresentação</a></li>
-            <li><a href="#sobre">Sobre mim</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-        </ul>
+            <ul>
+                <li><a href="#home">Apresentação</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+            </ul>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()" class="icon">
+                    <i class="bi bi-list" style="font-size: 3.5vh;"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#home">Apresentação</a></li>
+                <li class="nav-item"><a href="#sobre">Sobre mim</a></li>
+                <li class="nav-item"><a href="#skills">Habilidades</a></li>
+                <li class="nav-item"><a href="#projetos">Projetos</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
-        <section class="home">
+        <section id="home">
             <div class="intro">
                 <h2><span class="marca-texto">Eu sou Davi Barbosa</span></h2>
                 <h3>Programador <span class="txt-destaque">Front-End :)</span></h3>
@@ -73,7 +93,7 @@
         <section id="skills">
             <h2>Habilidades</h2>
             <hr>
-            <p>Experiencias Em:</p>
+            <p  class="skill-experincia">Experiencias Em:</p>
             <div class="cards">
                 <div class="skill-card">
                     <div class="icon">
@@ -126,7 +146,7 @@
                 </div>
             </div>
 
-            <p>Experiencias Futuras:</p>
+            <p class="skill-experincia">Experiencias Futuras:</p>
             <div class="cards">
                 <div class="skill-card">
                     <div class="icon">
@@ -220,11 +240,18 @@
         <h2>Entre em contato</h2>
         <div class="redes-sociais">
             <a href="">
-                <img alt="Davi-Js" src="assents/img/svg-redes/linkedin.svg"></a>
-            <a href=""><img alt="Davi-Js" src="assents/img/svg-redes/github.svg"></a>
-            <a href=""><img src="assents/img/svg-redes/insta.svg" alt=""></a>
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="">
+                <i class="bi bi-instagram"></i>
+            </a>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
