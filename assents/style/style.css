@@ -1,3 +1,22 @@
+:root{
+    --white: white;
+    --azulclaro: #0db0f6;
+    --black: black;
+    --textodestaque: #01a1e5;
+    --buttonrepositorio: rgb(118, 116, 116);
+
+    /* CORES REDES SOCIAIS */
+    --corinsta: #E4405F;
+    --corlinkedin:  #0e76a2;
+
+    /* CORES DO FUNDO CLARO/ESCURO */
+
+    --cormodoclaro:rgb(220, 219, 219);
+    --cormodoescuro: #151b1e;
+    
+    /* rgb(62, 62, 62) */
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -13,8 +32,9 @@ html{
     display: flex;
     align-items: center;
     padding:0 5vh 0 5vh;
-    border-bottom: 1px solid #0db0f6;
+    border-bottom: 1px solid var(--azulclaro);
     justify-content: space-between;
+    background-color: var(--cormodoclaro);
 }
 .nav-bar ul{
     display: flex;
@@ -26,60 +46,31 @@ header ul li{
 }
 header ul li a{
     text-decoration: none;
-    color: black;
+    color: var(--black);
     transition: .5s;
 }
 header ul li a:hover{
     transition: .5s;
-    color: #0db0f6;
-    border-bottom: 1px solid #0db0f6;
+    color: var(--azulclaro);
+    border-bottom: 1px solid var(--azulclaro);
 }
 .mobile-menu-icon{
     display: none;
 }
 .mobile-menu{
     display: none;
-}
-
-@media screen and (max-width:730px){
-    /* .nav-bar{
-        padding: 1.5rem 4rem ;
-    } */
-    .nav-bar ul{
-        display: none;
-    }
-    .mobile-menu-icon{
-        display: block;
-    }
-    .mobile-menu-icon button{
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-    .mobile-menu ul{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    .mobile-menu .nav-item{
-        display: block;
-        padding-top: 1.2rem;
-    }
-    .open{
-        display: block;
-        transition: 1s;
-    }
+    background-color: var(--cormodoclaro);
+    border-bottom: 1px solid var(--azulclaro);
 }
 main{
     padding-left: 5vh;
     padding-right: 5vh;
     padding-bottom: 5rem;
-    background-color: rgb(220, 219, 219);
+    background-color: var(--cormodoclaro);
 }
 hr{
     width: 30px;
-    border:1.5px solid #03b3ff; 
+    border:1.5px solid var(--azulclaro); 
     animation: movimento 3s infinite ease-in-out;
 }
 @keyframes movimento{
@@ -116,12 +107,11 @@ h2 {
     font-size: 4vh;
 }
 .marca-texto{
-    background-color: #0db0f6;
-    color: white;
+    background-color: var(--azulclaro);
+    color: var(--white);
 }
 #home .intro h3 {
     font-size: 6vh;
-    /* text-align: center; */
 }
 .redes{
     margin-top:2vh;
@@ -132,7 +122,7 @@ h2 {
 .redes a {
     padding: 12px 20px 12px 20px;
     text-decoration: none;
-    color: white;
+    color: var(--white);
     border-radius: 30px;
     margin: 7px;
 }
@@ -141,33 +131,33 @@ h2 {
     transition: 0.5s;
 }
 .redes #github{
-    border:1px solid black;
-    color: black;
+    border:1px solid var(--black);
+    color: var(--black);
     transition: 0.5s;
 }
 .redes #github:hover{
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
     transition: 0.5s;
 }
 .redes #linkedin{
-    border: 1px solid #0e76a2;
-    color: #0e76a2;
+    border: 1px solid var(--corlinkedin);
+    color: var(--corlinkedin);
     transition: 0.5s;
 }
 .redes #linkedin:hover{
-    background-color: #0e76a2;
-    color: white;
+    background-color: var(--corlinkedin);
+    color: var(--white);
     transition: 0.5s;
 }
 .redes #insta{
-    border: 1px solid #E4405F;
-    color: #E4405F;
+    border: 1px solid var(--corinsta);
+    color: var(--corinsta);
     transition: 0.5s;
 }
 .redes #insta:hover{
-    background-color: #E4405F;
-    color: white;
+    background-color: var(--corinsta);
+    color: var(--white);
     transition: 0.5s;
 }
 #img-apresentacao {
@@ -191,7 +181,7 @@ h2 {
     margin: 8px;
 }
 .txt-destaque{
-    color: #009de0;
+    color: var(--textodestaque);
     font-weight: 400;
 }
 /* SEÇÃO HABILIDADES */
@@ -215,9 +205,9 @@ h2 {
 .skill-card{
     width: 8rem;
     height: 8rem;
-    background-color: black;
-    border-bottom: 10px solid #0db0f6;
-    color: white;
+    background-color: var(--black);
+    border-bottom: 10px solid var(--azulclaro);
+    color: var(--white);
     border-radius: 20px;
     margin: 0.5rem;
 
@@ -231,7 +221,6 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-bottom: 2rem; */
 }
 .icon p{
     font-size: 20px;
@@ -289,7 +278,7 @@ h2 {
 .button-project a{
     padding: 12px 20px 12px 20px;
     text-decoration: none;
-    color: rgb(118, 116, 116);
+    color: var(--buttonrepositorio);
     border-radius: 30px;
     margin: 7px;
 }
@@ -298,18 +287,18 @@ h2 {
     transition: 0.5s;
 }
 #repositório{
-    border: 1px solid rgb(118, 116, 116);
+    border: 1px solid var(--buttonrepositorio);
     transition: 0.5s;
 }
 #repositório:hover{
-    border: 1px solid #0db0f6;
-    background-color: #0db0f6;
-    color: white;
+    border: 1px solid var(--azulclaro);
+    background-color: var(--azulclaro);
+    color: var(--white);
     transition: 0.5s;
 }
 #visualizar{
-    background-color: #0db0f6;
-    color: white;
+    background-color: var(--azulclaro);
+    color: var(--white);
     transition: 0.5s;
 }
 
@@ -336,8 +325,8 @@ h2 {
 /* FOOTER */
 footer{
     text-align: center;
-    background-color: rgb(62, 62, 62);
-    color: white;
+    background-color: var(--cormodoescuro);
+    color: var(--white);
 }
 footer h2{
     padding-top: 2rem;
@@ -362,69 +351,7 @@ footer h2{
 }
 .redes-sociais a i{
     font-size: 8vh;
-    color: white;
+    color: var(--white);
  
 }
-@media(max-width:900px){
-    #home{
-        flex-direction: column-reverse;
-    }
-    .intro{
-        justify-content: center;
-        align-items: center;
-    }
-    #img-apresentacao{
-        max-width: 45vh;
-    }
-    #home p{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .sobre{
-        padding-left: 5px;
-        padding-right: 5px;
-    }
 
-
-    .project{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        column-gap: 4rem;
-    }
-
-    .img-projetos,#img-projetos-direita,.container-txt-projeto,.container-txt-projeto-direita{
-        /* width:50vh; */
-        border-radius: 2rem;
-        display: flex;
-        justify-content: center;
-    }
-    #alinhamento-direita{
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        align-items: start;
-        text-align: start;
-    }
-    #project-right{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .img-projetos img{
-        max-width: 50vh;
-        min-width: 30vh;
-    }
-    .project{
-        display: flex;
-        flex-direction: column;
-    }
-}
-@media(max-width:700px){
-    .redes{
-        margin-top:2vh;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-}
