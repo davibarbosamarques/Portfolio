@@ -16,7 +16,6 @@
     
     /* rgb(62, 62, 62) */
 }
-
 * {
     padding: 0;
     margin: 0;
@@ -35,7 +34,16 @@ html{
     border-bottom: 1px solid var(--azulclaro);
     justify-content: space-between;
     background-color: var(--cormodoclaro);
+    transition: 1s;
+
 }
+[data-thema="light"] .nav-bar{
+    background-color: var(--cormodoclaro);
+}
+[data-thema="dark"] .nav-bar{
+    background-color: var(--cormodoescuro);
+    color: var(--white);
+}  
 .nav-bar ul{
     display: flex;
     list-style: none;
@@ -49,24 +57,50 @@ header ul li a{
     color: var(--black);
     transition: .5s;
 }
+[data-thema="dark"] header ul li a{
+    color: var(--white);
+}  
 header ul li a:hover{
     transition: .5s;
     color: var(--azulclaro);
     border-bottom: 1px solid var(--azulclaro);
+}
+#btnModeDark{
+    width: 7vh;
+    height: 7vh;
+    border: none;
+    border-radius: 10px;
+    background-color: #0db0f6;
+    color: white;
+    font-size: 3vh;
 }
 .mobile-menu-icon{
     display: none;
 }
 .mobile-menu{
     display: none;
-    background-color: var(--cormodoclaro);
     border-bottom: 1px solid var(--azulclaro);
+}
+[data-thema="light"] .mobile-menu{
+    background-color: var(--cormodoclaro);
+}
+[data-thema="dark"] .mobile-menu{
+    background-color: var(--cormodoescuro);
+    color: var(--white);
 }
 main{
     padding-left: 5vh;
     padding-right: 5vh;
     padding-bottom: 5rem;
+    transition: 1s;
+    /* background-color: var(--cormodoclaro); */
+}
+[data-thema="light"] main{
     background-color: var(--cormodoclaro);
+}
+[data-thema="dark"] main{
+    background-color: var(--cormodoescuro);
+    color: var(--white);
 }
 hr{
     width: 30px;
@@ -135,6 +169,12 @@ h2 {
     color: var(--black);
     transition: 0.5s;
 }
+[data-thema="light"] main{
+    background-color: var(--cormodoclaro);
+}
+[data-thema="dark"] #github{
+    color: var(--white);
+}
 .redes #github:hover{
     background-color: var(--black);
     color: var(--white);
@@ -145,6 +185,9 @@ h2 {
     color: var(--corlinkedin);
     transition: 0.5s;
 }
+[data-thema="dark"] #linkedin{
+    color: var(--white);
+}
 .redes #linkedin:hover{
     background-color: var(--corlinkedin);
     color: var(--white);
@@ -154,6 +197,9 @@ h2 {
     border: 1px solid var(--corinsta);
     color: var(--corinsta);
     transition: 0.5s;
+}
+[data-thema="dark"] #insta{
+    color: var(--white);
 }
 .redes #insta:hover{
     background-color: var(--corinsta);
@@ -327,6 +373,9 @@ footer{
     text-align: center;
     background-color: var(--cormodoescuro);
     color: var(--white);
+}
+[data-thema="dark"] footer{
+    border-top: 1px solid var(--azulclaro);
 }
 footer h2{
     padding-top: 2rem;
