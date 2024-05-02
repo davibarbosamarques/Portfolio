@@ -23,8 +23,8 @@ btnmodedark.addEventListener('click', () => {
 })
 
 function definirtema(tema){
-    const icondark = '<i class="bi bi-moon-stars"></i>'
-    const iconlight = '<i class="bi bi-brightness-high"></i>'
+    const icondark = '<i class="bi bi-moon-stars" style="font-size: 3vh;"></i>'
+    const iconlight = '<i class="bi bi-brightness-high" style="font-size: 3vh;"></i>'
     document.documentElement.setAttribute("data-thema", tema)
 
     if (tema == 'light'){

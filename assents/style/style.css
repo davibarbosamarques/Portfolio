@@ -66,13 +66,12 @@ header ul li a:hover{
     border-bottom: 1px solid var(--azulclaro);
 }
 #btnModeDark{
-    width: 7vh;
-    height: 7vh;
-    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid #0db0f6;   
     border-radius: 10px;
-    background-color: #0db0f6;
+    background-color: transparent;
     color: white;
-    font-size: 3vh;
 }
 .mobile-menu-icon{
     display: none;
@@ -93,7 +92,6 @@ main{
     padding-right: 5vh;
     padding-bottom: 5rem;
     transition: 1s;
-    /* background-color: var(--cormodoclaro); */
 }
 [data-thema="light"] main{
     background-color: var(--cormodoclaro);
