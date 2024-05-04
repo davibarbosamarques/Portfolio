@@ -35,3 +35,41 @@ function definirtema(tema){
 }
 
 definirtema(themeSystem)
+
+// HEADER DINAMICO
+
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", function() {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  let header = document.getElementById("main-header");
+
+  if (currentScroll > lastScrollTop) {
+    header.style.top = "-100px"; // Esconde o header ao rolar para baixo
+  } else {
+    header.style.top = "0"; // Mostra o header ao rolar para cima
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
+
+// MENU INTELIGENTE
+
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('header ul li a');
+
+window.onscroll = () => {
+  sections.forEach(sec => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute('id');
+
+    if (top >= offset && top < offset + height) {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+      });
+      document.querySelector('header ul li a[href="#' + id + '"]').classList.add('active');
+    }
+  });
+};

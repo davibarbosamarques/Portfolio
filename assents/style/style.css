@@ -23,6 +23,12 @@
     font-weight: 300;
     font-style: normal;
 }
+[data-thema="light"] body{
+    background-color: var(--cormodoclaro);
+}
+[data-thema="dark"] body{
+    background-color: var(--cormodoescuro);
+}
 html{
     scroll-behavior: smooth;
 }
@@ -35,7 +41,6 @@ html{
     justify-content: space-between;
     background-color: var(--cormodoclaro);
     transition: 1s;
-
 }
 [data-thema="light"] .nav-bar{
     background-color: var(--cormodoclaro);
@@ -48,6 +53,15 @@ html{
     display: flex;
     list-style: none;
 }
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
+}
 header ul li{
     margin-left: 7px;
     margin-right: 7px;
@@ -55,15 +69,34 @@ header ul li{
 header ul li a{
     text-decoration: none;
     color: var(--black);
-    transition: .5s;
+    position: relative;
 }
 [data-thema="dark"] header ul li a{
     color: var(--white);
 }  
+header ul li a::after {
+    content: " ";
+    display: block; /* Para que o pseudo-elemento tenha uma dimensão e seja visível */
+    width: 0%;
+    height: 2px;
+    background-color: var(--textodestaque);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
 header ul li a:hover{
-    transition: .5s;
-    color: var(--azulclaro);
-    border-bottom: 1px solid var(--azulclaro);
+    transition: 0.5s;
+    color: var(--textodestaque);
+}
+header ul li a:hover::after{
+    width: 50%;
+}
+.active::after{
+   width: 100% !important;
+}
+.active{
+    color: var(--textodestaque) !important;
 }
 #btnModeDark{
     width: 2.5rem;
@@ -136,12 +169,12 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 12vh;
     padding-top: 7%;
     padding-bottom: 7%;
 }
 #home .intro{
     display: flex;
-
     flex-direction: column;
 }
 @media(min-width: 900px){
