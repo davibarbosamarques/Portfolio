@@ -68,10 +68,24 @@ header ul li a:hover{
 #btnModeDark{
     width: 2.5rem;
     height: 2.5rem;
-    border: 1px solid #0db0f6;   
+    border: none;   ;
     border-radius: 10px;
     background-color: transparent;
-    color: white;
+    color: var(--cormodoescuro);
+    cursor: pointer;
+
+    transition: .5s;
+    box-shadow: 1px 1px 20px 5px var(--textodestaque);
+}
+#btnModeDark:hover{
+    transform: scale(1.2);
+    transition: .5s;
+}
+[data-thema="dark"] #btnModeDark{
+    color: var(--white);
+}
+[data-thema="dark"] .icon{
+    color: var(--white);
 }
 .mobile-menu-icon{
     display: none;
@@ -172,6 +186,12 @@ h2 {
 }
 [data-thema="dark"] #github{
     color: var(--white);
+    border:1px solid var(--white);
+    opacity: 0.5;
+}
+[data-thema="dark"] #github:hover{
+    border: 1px solid var(--black);
+    opacity: 1;
 }
 .redes #github:hover{
     background-color: var(--black);
@@ -279,14 +299,15 @@ h2 {
 }
 /* SEÇÃO PROJETOS */
 .img-projetos{
-    /* width:50vh; */
     border-radius: 2rem;
     display: flex;
     justify-content: end;
 }
 .img-projetos img{
     max-width: 70vh;
+    max-height: 35vh;
     min-width: auto;
+    min-height: auto;
     object-fit: cover;
     transition: 0.8s;
 }
@@ -298,6 +319,8 @@ h2 {
 
 }
 .project{
+    width: auto;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 4rem;
@@ -309,8 +332,6 @@ h2 {
     justify-content: end;
 }
 .txt-projeto{
-    /* margin-top: 2rem; */
-
     max-width: 70vh;
     min-width: auto;
 }

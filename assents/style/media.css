@@ -47,40 +47,24 @@
         padding-left: 5px;
         padding-right: 5px;
     }
-
-
-    .project{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        column-gap: 4rem;
-    }
-
-    .img-projetos,#img-projetos-direita,.container-txt-projeto,.container-txt-projeto-direita{
-        /* width:50vh; */
-        border-radius: 2rem;
-        display: flex;
-        justify-content: center;
-    }
-    #alinhamento-direita{
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        align-items: start;
-        text-align: start;
-    }
-    #project-right{
-        display: flex;
-        flex-direction: column-reverse;
-    }
     .img-projetos img{
         max-width: 50vh;
-        min-width: 30vh;
+        object-fit: contain;
+    }
+    .img-projetos{
+        align-items: start;
+        padding-top: .5rem;
+    }
+    .txt-projeto p{
+        font-size: 12px;
+    }
+    .button-project a{
+        font-size: 12px;
     }
     .project{
-        display: flex;
-        flex-direction: column;
+        column-gap: 2rem;
     }
+
 }
 @media(max-width:700px){
     .redes{
@@ -89,5 +73,38 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-
+    .project{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 3rem;
+    }
+    .img-projetos img{
+        max-width: 100%;
+        max-height: none;
+        object-fit: contain;
+    }
+    .container-txt-projeto-direita, .container-txt-projeto{
+        justify-content: center !important;
+        height: auto;
+        width: auto;
+    }
+    #alinhamento-direita {
+        justify-content: start ;
+        align-items: start;
+        text-align: start;
+    }
+    .img-projetos{
+        justify-content: center !important;
+        height: auto;
+        width: auto;
+    }
+    .txt-projeto{
+        margin-top: 1rem;
+        max-width: 100%;
+    }
+    #project-right{
+        display: flex;
+        flex-direction: column-reverse;   
+    }
 }
