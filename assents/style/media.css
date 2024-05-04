@@ -108,3 +108,32 @@
         flex-direction: column-reverse;   
     }
 }
+@media(max-width:450px){
+    #img-apresentacao{
+        width: 35vh;
+    }
+
+}
+@media(max-width:400px){
+    .intro h2{
+        font-size: 3vh;
+    }
+    #home .intro h3{
+        font-size: 5vh;
+    }
+}
+@media(max-width:370px){
+    .skill-card{
+        width: 5rem;
+        height: 5rem;
+    }
+    .skill-card .icon p{
+        font-size: 13px;
+    }
+    .skill-card .icon img{
+        width: 40px;
+    }
+    .skill-card .icon svg{
+        width: 40px;
+    }
+}
