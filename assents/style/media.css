@@ -110,13 +110,15 @@
 }
 @media(max-width:450px){
     #img-apresentacao{
-        width: 35vh;
+        max-width: 45vh;
+        min-width: 40vh;
     }
 
 }
 @media(max-width:400px){
     .intro h2{
-        font-size: 3vh;
+        font-size: auto;
+        white-space: nowrap !important;
     }
     #home .intro h3{
         font-size: 5vh;
