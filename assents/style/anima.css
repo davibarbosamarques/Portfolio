@@ -1,0 +1,27 @@
+@keyframes example{
+    50%{
+        border-radius: 40% 70% 40% 60%;
+    }
+}
+
+@keyframes movimento{
+    50%{
+        margin-left: 8rem;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+.appear{
+    animation: aparecer 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
+}
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

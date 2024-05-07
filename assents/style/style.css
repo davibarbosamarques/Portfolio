@@ -152,14 +152,6 @@ hr{
     border:1.5px solid var(--azulclaro); 
     animation: movimento 3s infinite ease-in-out;
 }
-@keyframes movimento{
-    50%{
-        margin-left: 8rem;
-    }
-    100%{
-        margin-left: 0;
-    }
-}
 h1{
     font-weight: 300;
     font-style: normal;
@@ -176,11 +168,6 @@ h1{
 #home .intro{
     display: flex;
     flex-direction: column;
-}
-@media(min-width: 900px){
-    #home .intro{
-        width: 50%;
-    }
 }
 h2 {
     font-size: 4vh;
@@ -262,13 +249,6 @@ h2 {
     border-radius: 50%;
     animation:  example 3s infinite ease-in-out;
 }
-
-@keyframes example{
-    50%{
-        border-radius: 40% 70% 40% 60%;
-    }
-}
-
 
 /* SEÇÃO SOBRE MIM */
 #sobre{

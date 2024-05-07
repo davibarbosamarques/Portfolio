@@ -26,8 +26,13 @@
         transition: 1s;
     }
 }
-/* FIM MENU RESPONSIVO */
 
+/* FIM MENU RESPONSIVO */
+@media(min-width: 900px){
+    #home .intro{
+        width: 50%;
+    }
+}
 @media(max-width:900px){
     #home{
         flex-direction: column-reverse;
