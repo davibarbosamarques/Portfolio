@@ -1,4 +1,4 @@
-# Meu Portfólio 👨‍💻
+# Meu Portfólio
 <a href="https://davibarbosamarques.github.io/Portfolio/" target="_blank">
     🔗 <strong>Visite o portfólio aqui</strong>
 </a>
